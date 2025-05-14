@@ -34,3 +34,19 @@ console.log(colors);
 // lets say, arr=[1,2,3,4,5,6]; arr.slice(1,3) = 2,3
 let slicecolors = colors.slice(0,2);
 console.log(slicecolors);
+
+//indexof(X) - returns index of X if its there or else -1; 
+// includes(X) - returns true if there or else false; 
+// find(x=> x>10) - returns the very first value that passes the condition/test inside
+let chars=['Venti','Zhonli','Raiden','Nahida','Furina','Mavuika',10,20,30,40,50];
+console.log(chars.indexOf('Raiden'));
+console.log(chars.includes('Furina'));
+console.log(chars.find(chars=> chars>20));
+
+
+//foreach() - proti element er opor loop kore kaj kore
+const nombah =[1,2,3,4,5,6,7,8,9,10];
+nombah.forEach(X => console.log(X*2));
+
+let weapons = ["Sword","Greatsword","Bow","Bowgun","Staff","Knuckle"];
+weapons.forEach(Y => console.log( Y+"'s"));
