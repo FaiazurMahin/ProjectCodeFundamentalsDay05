@@ -84,17 +84,16 @@ console.log(variables.every(Z=>Z>1));
 
 //Nested Loop
 
-let grades = [
-    [90,90,90],
+let grades=[
     [80,80,80],
     [70,70,70],
+    [60,60,60]
 ]
 
-for(m=0;m<=grades.length;m++){
-    console.log("Studentno"+ m+ ":");
- 
-    for (n=0; n <= grades[m].length; n++){
-        console.log("Grades:");
+for(i=0; i<grades.length;i++){
+    console.log("Student No"+(i+1)+":");
 
-   }
+    for (j=0; j<grades[i].length;j++){
+        console.log("Grades:"+grades[i][j]);
+    }
 }
