@@ -50,3 +50,51 @@ nombah.forEach(X => console.log(X*2));
 
 let weapons = ["Sword","Greatsword","Bow","Bowgun","Staff","Knuckle"];
 weapons.forEach(Y => console.log( Y+"'s"));
+
+//the code below wont work as foreach doesnt return a new array, it just modifies the current array
+//To make a new array, we need to use map
+// let updatedweap = weapons.forEach(X=>X+"'s");
+// console.log(updatedweap);
+
+//map() - maps to a new array
+let variables=[1,2,3,4,5];
+// variables.map(Y=>console.log(Y*2));
+let doubles = variables.map(Y=>Y*2);
+console.log(doubles);
+
+//filters into a new array based on range or condition
+let mineralsPH = [20,30,40,50,89,97,102];
+let filteredminerals = mineralsPH.filter(PH=>PH>=50);
+console.log(filteredminerals);
+
+//reduce - reduces an aray to short or single value
+let subjects = [1,2,3,4,5];
+let addedsubs= subjects.reduce((acc, F)=> acc+F,1);
+console.log(addedsubs);
+
+
+//some() - if condition is true, returns true, if false returns false;
+//if even 1 element matches the condition, it returns true
+//every() - needs every element to match the condition or else, it gives false
+
+console.log(variables.some(Z=>Z>1));
+console.log(variables.some(Z=>Z>5));
+console.log(variables.every(Z=>Z>1));
+
+
+//Nested Loop
+
+let grades = [
+    [90,90,90],
+    [80,80,80],
+    [70,70,70],
+]
+
+for(m=0;m<=grades.length;m++){
+    console.log("Studentno"+ m+ ":");
+ 
+    for (n=0; n <= grades[m].length; n++){
+        console.log("Grades:");
+
+   }
+}
