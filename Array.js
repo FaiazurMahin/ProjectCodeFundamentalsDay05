@@ -97,3 +97,13 @@ for(i=0; i<grades.length;i++){
         console.log("Grades:"+grades[i][j]);
     }
 }
+
+//Nested Loop with ForEach
+
+let marks=[
+    [5,6],  //student1
+    [7,9],  //student2
+    [9,10]  //student3
+]
+
+marks.forEach(console.log(X=> X[i],))
